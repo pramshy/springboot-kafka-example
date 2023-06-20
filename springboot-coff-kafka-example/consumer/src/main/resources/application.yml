@@ -1,0 +1,10 @@
+spring:
+  cloud:
+    function:
+      definition: counter;logger
+    stream:
+      bindings:
+        counter-in-0.destination: pv_topic
+        counter-out-0.destination: pc_topic
+        logger-in-0.destination: pc_topic
+
